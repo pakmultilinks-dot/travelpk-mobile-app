@@ -1,0 +1,10 @@
+# Local credentials and machine-specific files
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Deployment-only staging copy and Cloudflare configuration
+/site/
+/wrangler.toml

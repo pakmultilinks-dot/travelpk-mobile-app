@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="A Travel.pk customer-journey demo with sample flights, trip updates, planning, alerts and support.">
+  <title>Travel.pk — Elevated Journeys (Demo)</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+  <div class="app-frame">
+    <header class="topbar">
+      <a class="brand" href="#home" data-action="navigate" data-view="home" aria-label="Travel.pk home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3.4 12.1 17.2-7.3c.7-.3 1.4.4 1.1 1.1l-7.3 17.2c-.3.7-1.3.6-1.5-.1l-2.1-7.1-7.1-2.1c-.7-.2-.8-1.2-.1-1.5Z"/><path d="m10.8 15.9 5-5"/></svg></span>
+        <span class="brand-type"><span class="brand-name">Travel<span>.pk</span></span><span class="brand-tag">ELEVATED JOURNEYS</span></span>
+      </a>
+      <div class="topbar-right"><span class="currency-pill"><span class="flag-dot">PK</span> PKR</span><button class="avatar-button" type="button" data-action="navigate" data-view="trips" aria-label="Open my trips"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.4-3.4 2.8-5.4 6.5-5.4s6.1 2 6.5 5.4"/></svg></button></div>
+    </header>
+
+    <div class="demo-banner" role="note"><span class="demo-dot"></span><span><strong>DEMO MODE</strong> · Sample data only. No booking, payment or message is created.</span></div>
+
+    <main id="app-main" tabindex="-1" aria-live="polite"></main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button type="button" class="nav-item is-active" data-action="navigate" data-view="home"><span class="nav-icon" data-icon="compass"></span><span>Explore</span></button>
+      <button type="button" class="nav-item" data-action="navigate" data-view="search"><span class="nav-icon" data-icon="search"></span><span>Flights</span></button>
+      <button type="button" class="nav-item" data-action="navigate" data-view="trips"><span class="nav-icon" data-icon="suitcase"></span><span>My trips</span></button>
+      <button type="button" class="nav-item" data-action="navigate" data-view="planner"><span class="nav-icon" data-icon="map"></span><span>Plan</span></button>
+      <button type="button" class="nav-item" data-action="navigate" data-view="more"><span class="nav-icon" data-icon="more"></span><span>More</span></button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js?v=2" defer></script>
+</body>
+</html>
